@@ -1,0 +1,31 @@
+{
+    "customers": [
+        {
+            "id": 1,
+            "name": "John Cena",
+            "monthlyExpenses": {
+                "moneySpentMonthOne": 400,
+                "moneySpentMonthTwo": 35,
+                "moneySpentMonthThree": 700
+            }
+        },
+        {
+            "id": 2,
+            "name": "Scuba Steve",
+            "monthlyExpenses": {
+                "moneySpentMonthOne": 1000,
+                "moneySpentMonthTwo": 1200,
+                "moneySpentMonthThree": 1500
+            }
+        },
+        {
+            "id": 3,
+            "name": "Tom Cruise",
+            "monthlyExpenses": {
+                "moneySpentMonthOne": 100,
+                "moneySpentMonthTwo": 75,
+                "moneySpentMonthThree": 550
+            }
+        }
+    ]
+}
