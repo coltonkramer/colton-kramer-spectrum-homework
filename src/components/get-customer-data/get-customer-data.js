@@ -88,7 +88,7 @@ export default function GetCustomerData() {
                 </p>
               </div>
             </div>
-            <p>To find out how you can redeem and use your rewards points please <span><a href="https://www.spectrum.com/" target="_blank" className="External-Link"> click here</a></span>.</p>
+            <p>To find out how you can redeem and use your rewards points please <span><a href="https://www.spectrum.com/" target="_blank" rel="noreferrer"className="External-Link"> click here</a></span>.</p>
           </div>
         );
       })}
