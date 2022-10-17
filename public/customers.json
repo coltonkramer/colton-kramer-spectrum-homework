@@ -4,7 +4,7 @@
             "id": 1,
             "name": "John Cena",
             "monthlyExpenses": {
-                "moneySpentMonthOne": 400,
+                "moneySpentMonthOne": 120,
                 "moneySpentMonthTwo": 35,
                 "moneySpentMonthThree": 700
             }

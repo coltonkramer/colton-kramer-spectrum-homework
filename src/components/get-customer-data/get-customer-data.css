@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+.Row{
+    margin: 0 auto;
+}
+.Customer-response-container{
+    margin: 2em;
+    border:1px black solid;
+    padding: 2em;
+}
+.Charter-Logo{
+    width: 150px;
+}
+.Thank-you-text{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+.Is-bold{
+    font-weight: 700;
+}

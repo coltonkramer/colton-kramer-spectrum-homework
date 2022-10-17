@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { calculateCustomerPoints, calculateTotalPoints } from "../../helpers/helpers";
+import './get-customer-data.css'
 
 export default function GetCustomerData() {
   const [customers, setCustomers] = useState([]);
@@ -25,7 +26,7 @@ export default function GetCustomerData() {
   }, []);
 
   return (
-    <div className="row">
+    <div className="Row">
       {customers.map((customer) => {
         const monthlyPointsArray = [];
         
@@ -36,21 +37,26 @@ export default function GetCustomerData() {
             );
         }
         return (
-          <div>
+          <div className="Customer-response-container">
+            <div className="charter-logo-container">
+              <img src="charter-logo.svg" alt="Charter Communications logo" className="Charter-Logo"></img>
+            </div>
+            <p className="Thank-you-text">Thank you for choosing Charter Communications {customer.name}!</p>
+            <div className="Body-text-container">
             <p>
-              Thank you for requesting your reward point values {customer.name}!
-              Below you will find your results.
+              You have received this message because you requested to see how many rewards points you have accumulated over the past 3 months.
             </p>
+            <p>Below you will find your results.</p>
             {monthlyPointsArray.map((element, i) => {
               return (
                 <div key={'div_' + element.toString()}>
-                  <p key={'p_' + element.toString()}>In Month {i+1} you earned {element} points</p>
+                  <p key={'p_' + element.toString()}>In <span className="Is-bold">Month {i+1}</span> you earned <span className="Is-bold">{element}</span> points</p>
                 </div>
               );
             })}
-            <p>Your total points over the last 3 months is {calculateTotalPoints(monthlyPointsArray)}</p>
+            <p>Your total over the last 3 months is <span className="Is-bold">{calculateTotalPoints(monthlyPointsArray)}</span> points</p>
+            </div>
           </div>
-          
         );
       })}
     </div>
