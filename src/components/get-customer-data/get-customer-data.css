@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
 .Row{
     margin: 0 auto;
+    font-size: 18px;
 }
 .Customer-response-container{
     margin: 2em;
@@ -10,11 +11,24 @@
 .Charter-Logo{
     width: 150px;
 }
-.Thank-you-text{
+.Message-Header{
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 1.5em;
 }
-.Is-bold{
+.Points-List{
+    background-color: rgba(189,195,199,.2);
+    padding: .25em 2em;
+}
+.Is-Bold{
     font-weight: 700;
+}
+.Total-container{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.35em;
+    padding: .25em 1.5em;
+}
+.External-Link{
+    color: black;
 }
